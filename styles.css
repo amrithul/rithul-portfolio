@@ -412,6 +412,7 @@ header.scrolled {
 }
 
 .hero-btns {
+  font-family:"Press Start 2P", cursive;
   display: flex;
   gap: 20px;
 }
