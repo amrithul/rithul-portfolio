@@ -1394,3 +1394,30 @@ footer {
 .website-links .btn {
   margin: 5px;
 }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.skills-category {
+  background: #25253000;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.012);
+}
+.skills-category h3 { margin-top: 0; }
+
+/* List styling to match your right-hand card look */
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.cert-list li + li {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
