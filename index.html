@@ -578,22 +578,24 @@ header {
 
 .hero-gif {
   margin: 28px 28px 32px 0;
-  border: 2px solid #ff2bd6;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #0a0610;
-  box-shadow:
-    0 0 0 1px #2ef6ff,
-    8px 10px 0 rgba(18, 0, 28, 0.4),
-    0 0 24px rgba(255, 43, 214, 0.22);
-  min-height: 220px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-gif img {
   display: block;
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 56%, transparent 84%);
+  mask-image: radial-gradient(ellipse at center, #000 56%, transparent 84%);
 }
 
 .bartop-wrap {
@@ -1661,7 +1663,8 @@ footer {
   }
 
   .hero-gif img {
-    height: 220px;
+    max-height: 240px;
+    height: auto;
   }
 
   .cabinet {
@@ -1825,7 +1828,8 @@ footer {
   }
 
   .hero-gif img {
-    height: 200px;
+    max-height: 200px;
+    height: auto;
   }
 
   .bartop-wrap {
